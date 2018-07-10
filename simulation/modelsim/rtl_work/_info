@@ -1,0 +1,309 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Cai.MY/Desktop/8bit_model/simulation/modelsim
+Ear
+Z1 w1531126767
+Z2 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z3 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z6 8C:/Users/Cai.MY/Desktop/8bit_model/ar.vhd
+Z7 FC:/Users/Cai.MY/Desktop/8bit_model/ar.vhd
+l0
+L8
+VCCUfPg__g<AMdhnN?hf=i2
+!s100 ]>iNKiCKR96@bb]:_XB<Y1
+Z8 OV;C;10.5b;63
+31
+Z9 !s110 1531141958
+!i10b 1
+Z10 !s108 1531141958.000000
+Z11 !s90 -reportprogress|300|-93|-work|work|C:/Users/Cai.MY/Desktop/8bit_model/ar.vhd|
+Z12 !s107 C:/Users/Cai.MY/Desktop/8bit_model/ar.vhd|
+!i113 1
+Z13 o-93 -work work
+Z14 tExplicit 1 CvgOpt 0
+Abehav
+R2
+R3
+R4
+R5
+DEx4 work 2 ar 0 22 CCUfPg__g<AMdhnN?hf=i2
+l19
+L17
+V=E<noBjd3@c6iSZ93I]Q92
+!s100 Y9ci0Ge]i^D2WOlXg:Yaf0
+R8
+31
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Econtroller
+Z15 w1531141413
+R2
+R3
+R4
+R5
+R0
+Z16 8C:/Users/Cai.MY/Desktop/8bit_model/controller.vhd
+Z17 FC:/Users/Cai.MY/Desktop/8bit_model/controller.vhd
+l0
+L7
+VI:YYXi7_>GnkM7OM`zNBD3
+!s100 ib42Xk]aZhB9;ORIMG]NH2
+R8
+31
+Z18 !s110 1531141959
+!i10b 1
+Z19 !s108 1531141959.000000
+Z20 !s90 -reportprogress|300|-93|-work|work|C:/Users/Cai.MY/Desktop/8bit_model/controller.vhd|
+Z21 !s107 C:/Users/Cai.MY/Desktop/8bit_model/controller.vhd|
+!i113 1
+R13
+R14
+Abehav
+R2
+R3
+R4
+R5
+DEx4 work 10 controller 0 22 I:YYXi7_>GnkM7OM`zNBD3
+l27
+L25
+V7aE;f21cP5aW74PX[_IMl2
+!s100 0V?7?`CjCJE<8J=3CbQ[a0
+R8
+31
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 1
+R13
+R14
+Edr
+Z22 w1531127849
+R2
+R3
+R4
+R5
+R0
+Z23 8C:/Users/Cai.MY/Desktop/8bit_model/dr.vhd
+Z24 FC:/Users/Cai.MY/Desktop/8bit_model/dr.vhd
+l0
+L9
+Vc3BVP`dkkjnA5]J3X[iMP3
+!s100 ;HJN8UYRTXI@O^5hU=;SL3
+R8
+31
+R18
+!i10b 1
+R19
+Z25 !s90 -reportprogress|300|-93|-work|work|C:/Users/Cai.MY/Desktop/8bit_model/dr.vhd|
+Z26 !s107 C:/Users/Cai.MY/Desktop/8bit_model/dr.vhd|
+!i113 1
+R13
+R14
+Abehav
+R2
+R3
+R4
+R5
+DEx4 work 2 dr 0 22 c3BVP`dkkjnA5]J3X[iMP3
+l20
+L18
+VCzO2LM:>VfQPzH_<5gQUj3
+!s100 RHaaON8a=MQ:2h8cdBPM82
+R8
+31
+R18
+!i10b 1
+R19
+R25
+R26
+!i113 1
+R13
+R14
+Eir
+Z27 w1531128123
+R2
+R3
+R4
+R5
+R0
+Z28 8C:/Users/Cai.MY/Desktop/8bit_model/ir.vhd
+Z29 FC:/Users/Cai.MY/Desktop/8bit_model/ir.vhd
+l0
+L8
+VM@MF]Nf28K97;ZRa5=EH80
+!s100 h^?PJ=5;[`h;UL>RfWMB01
+R8
+31
+Z30 !s110 1531141957
+!i10b 1
+Z31 !s108 1531141957.000000
+Z32 !s90 -reportprogress|300|-93|-work|work|C:/Users/Cai.MY/Desktop/8bit_model/ir.vhd|
+Z33 !s107 C:/Users/Cai.MY/Desktop/8bit_model/ir.vhd|
+!i113 1
+R13
+R14
+Abehav
+R2
+R3
+R4
+R5
+DEx4 work 2 ir 0 22 M@MF]Nf28K97;ZRa5=EH80
+l22
+L18
+VUdzgG>73Q@7jQSM@h=?mK0
+!s100 U:Sm8nOdma;bBgz[_hCBj2
+R8
+31
+R30
+!i10b 1
+R31
+R32
+R33
+!i113 1
+R13
+R14
+Emetronome
+Z34 w1531137291
+R2
+R3
+R4
+R5
+R0
+Z35 8C:/Users/Cai.MY/Desktop/8bit_model/metronome.vhd
+Z36 FC:/Users/Cai.MY/Desktop/8bit_model/metronome.vhd
+l0
+L7
+V^BnRiH3mSWaNIHePc[JSe2
+!s100 76IGCe;Ve@>^j=WGXhF^M3
+R8
+31
+R18
+!i10b 1
+R19
+Z37 !s90 -reportprogress|300|-93|-work|work|C:/Users/Cai.MY/Desktop/8bit_model/metronome.vhd|
+Z38 !s107 C:/Users/Cai.MY/Desktop/8bit_model/metronome.vhd|
+!i113 1
+R13
+R14
+Abehav
+R2
+R3
+R4
+R5
+DEx4 work 9 metronome 0 22 ^BnRiH3mSWaNIHePc[JSe2
+l16
+L14
+VcmQ63??V<]`Ild^oUaeTB2
+!s100 aAh>5AoRX1=DULRnZcWe13
+R8
+31
+R18
+!i10b 1
+R19
+R37
+R38
+!i113 1
+R13
+R14
+Epc
+Z39 w1531125288
+R2
+R3
+R4
+R5
+R0
+Z40 8C:/Users/Cai.MY/Desktop/8bit_model/pc.vhd
+Z41 FC:/Users/Cai.MY/Desktop/8bit_model/pc.vhd
+l0
+L9
+VP16]zD@N_;`OM?V]I9PEm0
+!s100 2?0b[4beTg[^4Of[M0R3Y3
+R8
+31
+R9
+!i10b 1
+R31
+Z42 !s90 -reportprogress|300|-93|-work|work|C:/Users/Cai.MY/Desktop/8bit_model/pc.vhd|
+Z43 !s107 C:/Users/Cai.MY/Desktop/8bit_model/pc.vhd|
+!i113 1
+R13
+R14
+Abehav
+R2
+R3
+R4
+R5
+DEx4 work 2 pc 0 22 P16]zD@N_;`OM?V]I9PEm0
+l19
+L17
+V:93=E[USK=>cQbP`gk10a2
+!s100 >Oc==6WkSTFIA2=186Z3>0
+R8
+31
+R9
+!i10b 1
+R31
+R42
+R43
+!i113 1
+R13
+R14
+Eram0
+Z44 w1531139154
+Z45 DPx9 altera_mf 20 altera_mf_components 0 22 7RjT1Xb9^`L[coRHZN<9k2
+R4
+R5
+R0
+Z46 8C:/Users/Cai.MY/Desktop/8bit_model/ram0.vhd
+Z47 FC:/Users/Cai.MY/Desktop/8bit_model/ram0.vhd
+l0
+L42
+VDTo_?j_RMVjMU4h;@JEin1
+!s100 dfZ<g^MK[;50^@E`43h;e1
+R8
+31
+R9
+!i10b 1
+R10
+Z48 !s90 -reportprogress|300|-93|-work|work|C:/Users/Cai.MY/Desktop/8bit_model/ram0.vhd|
+Z49 !s107 C:/Users/Cai.MY/Desktop/8bit_model/ram0.vhd|
+!i113 1
+R13
+R14
+Asyn
+R45
+R4
+R5
+DEx4 work 4 ram0 0 22 DTo_?j_RMVjMU4h;@JEin1
+l58
+L54
+V524]STkoLnkNMzMh37azV0
+!s100 ePe0[M?0iL<S=i?2S<jEl3
+R8
+31
+R9
+!i10b 1
+R10
+R48
+R49
+!i113 1
+R13
+R14

@@ -20,9 +20,9 @@ refer to the applicable agreement for further details.
 */
 (header "symbol" (version "1.1"))
 (symbol
-	(rect 16 16 256 416)
+	(rect 16 16 256 448)
 	(text "controller" (rect 5 0 40 12)(font "Arial" ))
-	(text "inst" (rect 8 384 20 396)(font "Arial" ))
+	(text "inst" (rect 8 416 20 428)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -152,9 +152,23 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 0 320)
 		(input)
+		(text "i_SHL" (rect 0 0 25 12)(font "Arial" ))
+		(text "i_SHL" (rect 21 315 46 327)(font "Arial" ))
+		(line (pt 0 320)(pt 16 320)(line_width 1))
+	)
+	(port
+		(pt 0 336)
+		(input)
+		(text "i_SHR" (rect 0 0 28 12)(font "Arial" ))
+		(text "i_SHR" (rect 21 331 49 343)(font "Arial" ))
+		(line (pt 0 336)(pt 16 336)(line_width 1))
+	)
+	(port
+		(pt 0 352)
+		(input)
 		(text "data_num[3..0]" (rect 0 0 60 12)(font "Arial" ))
-		(text "data_num[3..0]" (rect 21 315 81 327)(font "Arial" ))
-		(line (pt 0 320)(pt 16 320)(line_width 3))
+		(text "data_num[3..0]" (rect 21 347 81 359)(font "Arial" ))
+		(line (pt 0 352)(pt 16 352)(line_width 3))
 	)
 	(port
 		(pt 240 32)
@@ -303,7 +317,21 @@ refer to the applicable agreement for further details.
 		(text "o_NEG" (rect 188 347 219 359)(font "Arial" ))
 		(line (pt 240 352)(pt 224 352)(line_width 1))
 	)
+	(port
+		(pt 240 368)
+		(output)
+		(text "o_SHL" (rect 0 0 29 12)(font "Arial" ))
+		(text "o_SHL" (rect 190 363 219 375)(font "Arial" ))
+		(line (pt 240 368)(pt 224 368)(line_width 1))
+	)
+	(port
+		(pt 240 384)
+		(output)
+		(text "o_SHR" (rect 0 0 31 12)(font "Arial" ))
+		(text "o_SHR" (rect 188 379 219 391)(font "Arial" ))
+		(line (pt 240 384)(pt 224 384)(line_width 1))
+	)
 	(drawing
-		(rectangle (rect 16 16 224 384)(line_width 1))
+		(rectangle (rect 16 16 224 416)(line_width 1))
 	)
 )

@@ -20,9 +20,9 @@ refer to the applicable agreement for further details.
 */
 (header "symbol" (version "1.1"))
 (symbol
-	(rect 16 16 256 224)
+	(rect 16 16 256 256)
 	(text "ir" (rect 5 0 9 12)(font "Arial" ))
-	(text "inst" (rect 8 192 20 204)(font "Arial" ))
+	(text "inst" (rect 8 224 20 236)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -110,11 +110,25 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 240 176)
 		(output)
+		(text "o_SHL" (rect 0 0 29 12)(font "Arial" ))
+		(text "o_SHL" (rect 190 171 219 183)(font "Arial" ))
+		(line (pt 240 176)(pt 224 176)(line_width 1))
+	)
+	(port
+		(pt 240 192)
+		(output)
+		(text "o_SHR" (rect 0 0 31 12)(font "Arial" ))
+		(text "o_SHR" (rect 188 187 219 199)(font "Arial" ))
+		(line (pt 240 192)(pt 224 192)(line_width 1))
+	)
+	(port
+		(pt 240 208)
+		(output)
 		(text "DATA_OUT[3..0]" (rect 0 0 75 12)(font "Arial" ))
-		(text "DATA_OUT[3..0]" (rect 144 171 219 183)(font "Arial" ))
-		(line (pt 240 176)(pt 224 176)(line_width 3))
+		(text "DATA_OUT[3..0]" (rect 144 203 219 215)(font "Arial" ))
+		(line (pt 240 208)(pt 224 208)(line_width 3))
 	)
 	(drawing
-		(rectangle (rect 16 16 224 192)(line_width 1))
+		(rectangle (rect 16 16 224 224)(line_width 1))
 	)
 )

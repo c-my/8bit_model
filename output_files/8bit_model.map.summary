@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Jul 11 11:15:57 2018
+Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+Revision Name : 8bit_model
+Top-level Entity Name : eight_bit_model
+Family : Cyclone IV E
+Total logic elements : 194
+    Total combinational functions : 160
+    Dedicated logic registers : 75
+Total registers : 75
+Total pins : 58
+Total virtual pins : 0
+Total memory bits : 2,048
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

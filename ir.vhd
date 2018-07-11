@@ -10,7 +10,7 @@ entity ir is
 		clk: in std_logic;
 		en_D: in std_logic;
 		DATA_IN: in std_logic_vector(7 downto 0);	-- 输入操作码
-		o_LOAD,o_STORE,o_ADD,o_SUB,o_AND,o_OR,o_NOT,o_NEG,o_HALT: out std_logic;	-- 输出控制端
+		o_LOAD,o_STORE,o_ADD,o_SUB,o_AND,o_OR,o_NOT,o_NEG,o_HALT,o_SHL,o_SHR: out std_logic;	-- 输出控制端
 		DATA_OUT:out std_logic_vector(3 downto 0)	-- 输出操作数
 	);
 end ir;
@@ -42,9 +42,10 @@ begin
 		o_NOT		<='0';
 		o_NEG		<='0';
 		o_HALT	<='0';
+		o_SHL		<='0';
+		o_SHR		<='0';
 		--判断regq前4位
 		case head is
-			when "1000" => o_LOAD	<='1';
 			when "0001" => o_STORE	<='1';
 			when "0010" => o_ADD		<='1';
 			when "0011" => o_SUB		<='1';
@@ -52,7 +53,10 @@ begin
 			when "0101" => o_OR 		<='1';
 			when "0110" => o_NOT		<='1';
 			when "0111" => o_NEG 	<='1';
+			when "1000" => o_LOAD	<='1';
 			when "1001" => o_HALT	<='1';
+			when "1010" => o_SHL 	<='1';
+			when "1011" =>	o_SHR		<='1';
 			when others => null;
 		end case;
 		--输出regq后4位

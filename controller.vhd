@@ -8,7 +8,7 @@ entity controller is
 	port(
 		clk: in std_logic;
 		t0,t1,t2,t3,t4,t5,t6,t7: in std_logic;	-- 节拍输入
-		i_LOAD,i_STORE,i_ADD,i_SUB,i_AND,i_OR,i_NOT,i_NEG,i_HALT: in std_logic;	-- 输入控制端
+		i_LOAD,i_STORE,i_ADD,i_SUB,i_AND,i_OR,i_NOT,i_NEG,i_HALT,i_SHL,i_SHR: in std_logic;	-- 输入控制端
 		data_num: in std_logic_vector(3 downto 0);
 		en_ALU_D: out std_logic;	-- ACC使能
 		en_PC: out std_logic;	-- PC使能
@@ -24,7 +24,7 @@ entity controller is
 		data_out: out std_logic_vector(7 downto 0);
 		clr_ACC:out std_logic;
 		en_dBus,en_ALU: out std_logic;
-		o_ADD,o_SUB,o_AND,o_OR,o_NOT,o_NEG: out std_logic
+		o_ADD,o_SUB,o_AND,o_OR,o_NOT,o_NEG,o_SHL,o_SHR: out std_logic
 	);
 end controller;
 
@@ -95,6 +95,12 @@ begin
 				elsif i_NEG='1' then
 					en_ALU_D<='1';
 					o_NEG<='1';
+				elsif i_SHL='1' then
+					en_ALU_D<='1';
+					o_SHL<='1';
+				elsif i_SHR='1' then
+					en_ALU_D<='1';
+					o_SHR<='1';
 				end if;
 			elsif t6='1' then
 				if i_LOAD='1' then	-- 关闭acc 节拍复位
@@ -123,7 +129,15 @@ begin
 					en_ALU<='1';
 				elsif i_NEG='1' then
 					en_ALU_D<='0';
-					o_NEG<='1';
+					o_NEG<='0';
+					en_ALU<='1';
+				elsif i_SHL='1' then
+					en_ALU_D<='0';
+					o_SHL<='0';
+					en_ALU<='1';
+				elsif i_SHR='1' then
+					en_ALU_D<='0';
+					o_SHR<='0';
 					en_ALU<='1';
 				end if;
 			elsif t7='1' then
@@ -148,6 +162,14 @@ begin
 					clr_ME<='1';
 					en_PC<='1';
 				elsif i_NEG='1' then
+					en_ALU<='0';
+					clr_ME<='1';
+					en_PC<='1';
+				elsif i_SHL='1' then
+					en_ALU<='0';
+					clr_ME<='1';
+					en_PC<='1';
+				elsif i_SHR='1' then
 					en_ALU<='0';
 					clr_ME<='1';
 					en_PC<='1';

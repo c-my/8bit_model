@@ -18,7 +18,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "07/10/2018 23:51:45"
+-- Generated on "07/11/2018 11:16:50"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          eight_bit_model
 -- 
@@ -35,13 +35,7 @@ ARCHITECTURE eight_bit_model_arch OF eight_bit_model_vhd_vec_tst IS
 -- signals                                                   
 SIGNAL acc_out : STD_LOGIC_VECTOR(7 DOWNTO 0);
 SIGNAL accD : STD_LOGIC_VECTOR(7 DOWNTO 0);
-SIGNAL alu_ADD : STD_LOGIC;
-SIGNAL ALU_AND : STD_LOGIC;
-SIGNAL ALU_NEG : STD_LOGIC;
-SIGNAL ALU_NOT : STD_LOGIC;
-SIGNAL ALU_OR : STD_LOGIC;
 SIGNAL alu_out : STD_LOGIC_VECTOR(7 DOWNTO 0);
-SIGNAL ALU_SUB : STD_LOGIC;
 SIGNAL ar_out : STD_LOGIC_VECTOR(7 DOWNTO 0);
 SIGNAL clk : STD_LOGIC;
 SIGNAL dBus : STD_LOGIC_VECTOR(7 DOWNTO 0);
@@ -52,13 +46,7 @@ COMPONENT eight_bit_model
 	PORT (
 	acc_out : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
 	accD : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
-	alu_ADD : OUT STD_LOGIC;
-	ALU_AND : OUT STD_LOGIC;
-	ALU_NEG : OUT STD_LOGIC;
-	ALU_NOT : OUT STD_LOGIC;
-	ALU_OR : OUT STD_LOGIC;
 	alu_out : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
-	ALU_SUB : OUT STD_LOGIC;
 	ar_out : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
 	clk : IN STD_LOGIC;
 	dBus : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
@@ -73,13 +61,7 @@ BEGIN
 -- list connections between master ports and signals
 	acc_out => acc_out,
 	accD => accD,
-	alu_ADD => alu_ADD,
-	ALU_AND => ALU_AND,
-	ALU_NEG => ALU_NEG,
-	ALU_NOT => ALU_NOT,
-	ALU_OR => ALU_OR,
 	alu_out => alu_out,
-	ALU_SUB => ALU_SUB,
 	ar_out => ar_out,
 	clk => clk,
 	dBus => dBus,

@@ -14,6 +14,8 @@ entity alu is
 		en_Or:  in std_logic;
 		en_Not: in std_logic;
 		en_NEG: in std_logic;
+		en_SHL: in std_logic;
+		en_SHR: in std_logic;
 		en_D:	  in std_logic;	-- 0时不运算 输出acc
 		q:out std_logic_vector(7 downto 0);	-- 输出
 		accD:in std_logic_vector(7 downto 0);	-- 输入
@@ -40,6 +42,10 @@ signal regq: std_logic_vector(7 downto 0);
 						regq<=not accD;
 					elsif en_NEG='1' then
 						regq<=(not accD) + 1;
+					elsif en_SHL='1' then
+						regq<= to_stdlogicvector(to_bitvector(accD) sll conv_integer(dbus));
+					elsif en_SHR='1' then
+						regq<= to_stdlogicvector(to_bitvector(accD) srl conv_integer(dbus));				
 					end if;
 				end if;
 			end if;

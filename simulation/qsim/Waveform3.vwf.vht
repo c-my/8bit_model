@@ -18,7 +18,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "07/11/2018 11:16:50"
+-- Generated on "07/11/2018 22:18:32"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          eight_bit_model
 -- 
@@ -34,24 +34,26 @@ ARCHITECTURE eight_bit_model_arch OF eight_bit_model_vhd_vec_tst IS
 -- constants                                                 
 -- signals                                                   
 SIGNAL acc_out : STD_LOGIC_VECTOR(7 DOWNTO 0);
-SIGNAL accD : STD_LOGIC_VECTOR(7 DOWNTO 0);
-SIGNAL alu_out : STD_LOGIC_VECTOR(7 DOWNTO 0);
-SIGNAL ar_out : STD_LOGIC_VECTOR(7 DOWNTO 0);
 SIGNAL clk : STD_LOGIC;
-SIGNAL dBus : STD_LOGIC_VECTOR(7 DOWNTO 0);
-SIGNAL pc_out : STD_LOGIC_VECTOR(7 DOWNTO 0);
-SIGNAL ram0_out : STD_LOGIC_VECTOR(7 DOWNTO 0);
+SIGNAL OA : STD_LOGIC;
+SIGNAL OB : STD_LOGIC;
+SIGNAL OC : STD_LOGIC;
+SIGNAL OD : STD_LOGIC;
+SIGNAL OE : STD_LOGIC;
+SIGNAL OF : STD_LOGIC;
+SIGNAL OG : STD_LOGIC;
 SIGNAL test_res : STD_LOGIC;
 COMPONENT eight_bit_model
 	PORT (
 	acc_out : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
-	accD : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
-	alu_out : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
-	ar_out : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
 	clk : IN STD_LOGIC;
-	dBus : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
-	pc_out : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
-	ram0_out : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+	OA : OUT STD_LOGIC;
+	OB : OUT STD_LOGIC;
+	OC : OUT STD_LOGIC;
+	OD : OUT STD_LOGIC;
+	OE : OUT STD_LOGIC;
+	\OF\ : OUT STD_LOGIC;
+	OG : OUT STD_LOGIC;
 	test_res : OUT STD_LOGIC
 	);
 END COMPONENT;
@@ -60,25 +62,21 @@ BEGIN
 	PORT MAP (
 -- list connections between master ports and signals
 	acc_out => acc_out,
-	accD => accD,
-	alu_out => alu_out,
-	ar_out => ar_out,
 	clk => clk,
-	dBus => dBus,
-	pc_out => pc_out,
-	ram0_out => ram0_out,
+	OA => OA,
+	OB => OB,
+	OC => OC,
+	OD => OD,
+	OE => OE,
+	\OF\ => OF,
+	OG => OG,
 	test_res => test_res
 	);
 
 -- clk
 t_prcs_clk: PROCESS
 BEGIN
-LOOP
 	clk <= '0';
-	WAIT FOR 5000 ps;
-	clk <= '1';
-	WAIT FOR 5000 ps;
-	IF (NOW >= 1000000 ps) THEN WAIT; END IF;
-END LOOP;
+WAIT;
 END PROCESS t_prcs_clk;
 END eight_bit_model_arch;

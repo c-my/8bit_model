@@ -18,7 +18,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "07/11/2018 00:43:24"
+-- Generated on "07/11/2018 22:46:10"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          eight_bit_model
 -- 
@@ -34,25 +34,27 @@ ARCHITECTURE eight_bit_model_arch OF eight_bit_model_vhd_vec_tst IS
 -- constants                                                 
 -- signals                                                   
 SIGNAL acc_out : STD_LOGIC_VECTOR(7 DOWNTO 0);
-SIGNAL accD : STD_LOGIC_VECTOR(7 DOWNTO 0);
-SIGNAL alu_out : STD_LOGIC_VECTOR(7 DOWNTO 0);
-SIGNAL ar_out : STD_LOGIC_VECTOR(7 DOWNTO 0);
 SIGNAL clk : STD_LOGIC;
-SIGNAL dBus : STD_LOGIC_VECTOR(7 DOWNTO 0);
-SIGNAL pc_out : STD_LOGIC_VECTOR(7 DOWNTO 0);
-SIGNAL ram0_out : STD_LOGIC_VECTOR(7 DOWNTO 0);
-SIGNAL test_res : STD_LOGIC;
+SIGNAL en_LED : STD_LOGIC;
+SIGNAL O_F : STD_LOGIC;
+SIGNAL OA : STD_LOGIC;
+SIGNAL OB : STD_LOGIC;
+SIGNAL OC : STD_LOGIC;
+SIGNAL OD : STD_LOGIC;
+SIGNAL OE : STD_LOGIC;
+SIGNAL OG : STD_LOGIC;
 COMPONENT eight_bit_model
 	PORT (
 	acc_out : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
-	accD : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
-	alu_out : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
-	ar_out : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
 	clk : IN STD_LOGIC;
-	dBus : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
-	pc_out : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
-	ram0_out : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
-	test_res : OUT STD_LOGIC
+	en_LED : OUT STD_LOGIC;
+	O_F : OUT STD_LOGIC;
+	OA : OUT STD_LOGIC;
+	OB : OUT STD_LOGIC;
+	OC : OUT STD_LOGIC;
+	OD : OUT STD_LOGIC;
+	OE : OUT STD_LOGIC;
+	OG : OUT STD_LOGIC
 	);
 END COMPONENT;
 BEGIN
@@ -60,14 +62,15 @@ BEGIN
 	PORT MAP (
 -- list connections between master ports and signals
 	acc_out => acc_out,
-	accD => accD,
-	alu_out => alu_out,
-	ar_out => ar_out,
 	clk => clk,
-	dBus => dBus,
-	pc_out => pc_out,
-	ram0_out => ram0_out,
-	test_res => test_res
+	en_LED => en_LED,
+	O_F => O_F,
+	OA => OA,
+	OB => OB,
+	OC => OC,
+	OD => OD,
+	OE => OE,
+	OG => OG
 	);
 
 -- clk

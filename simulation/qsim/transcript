@@ -1,7 +1,7 @@
 # do 8bit_model.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:16:55 on Jul 11,2018
+# Start time: 22:46:17 on Jul 11,2018
 # vcom -work work 8bit_model.vho 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -16,20 +16,20 @@
 # -- Loading package altera_primitives_components
 # -- Compiling entity eight_bit_model
 # -- Compiling architecture structure of eight_bit_model
-# End time: 11:16:56 on Jul 11,2018, Elapsed time: 0:00:01
+# End time: 22:46:18 on Jul 11,2018, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:16:56 on Jul 11,2018
-# vcom -work work Waveform3.vwf.vht 
+# Start time: 22:46:18 on Jul 11,2018
+# vcom -work work Waveform.vwf.vht 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity eight_bit_model_vhd_vec_tst
 # -- Compiling architecture eight_bit_model_arch of eight_bit_model_vhd_vec_tst
-# End time: 11:16:56 on Jul 11,2018, Elapsed time: 0:00:00
+# End time: 22:46:18 on Jul 11,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -novopt -c -t 1ps -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.eight_bit_model_vhd_vec_tst 
-# Start time: 11:16:56 on Jul 11,2018
+# Start time: 22:46:19 on Jul 11,2018
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -52,8 +52,8 @@
 # Loading cycloneive.cycloneive_ram_block(block_arch)
 # Loading cycloneive.cycloneive_ram_register(reg_arch)
 # Loading cycloneive.cycloneive_ram_pulse_generator(pgen_arch)
-# ** Warning: Design size of 39081 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# ** Warning: Design size of 36921 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
 # Expect performance to be adversely affected.
 # after#35
-# End time: 11:16:57 on Jul 11,2018, Elapsed time: 0:00:01
+# End time: 22:46:19 on Jul 11,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1

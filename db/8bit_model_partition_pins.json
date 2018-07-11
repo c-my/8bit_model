@@ -4,7 +4,31 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "test_res",
+					"name" : "OA",
+					"strict" : false
+				},
+				{
+					"name" : "OB",
+					"strict" : false
+				},
+				{
+					"name" : "OC",
+					"strict" : false
+				},
+				{
+					"name" : "OD",
+					"strict" : false
+				},
+				{
+					"name" : "OE",
+					"strict" : false
+				},
+				{
+					"name" : "OG",
+					"strict" : false
+				},
+				{
+					"name" : "O_F",
 					"strict" : false
 				},
 				{
@@ -37,182 +61,6 @@
 				},
 				{
 					"name" : "acc_out[0]",
-					"strict" : false
-				},
-				{
-					"name" : "accD[7]",
-					"strict" : false
-				},
-				{
-					"name" : "accD[6]",
-					"strict" : false
-				},
-				{
-					"name" : "accD[5]",
-					"strict" : false
-				},
-				{
-					"name" : "accD[4]",
-					"strict" : false
-				},
-				{
-					"name" : "accD[3]",
-					"strict" : false
-				},
-				{
-					"name" : "accD[2]",
-					"strict" : false
-				},
-				{
-					"name" : "accD[1]",
-					"strict" : false
-				},
-				{
-					"name" : "accD[0]",
-					"strict" : false
-				},
-				{
-					"name" : "alu_out[7]",
-					"strict" : false
-				},
-				{
-					"name" : "alu_out[6]",
-					"strict" : false
-				},
-				{
-					"name" : "alu_out[5]",
-					"strict" : false
-				},
-				{
-					"name" : "alu_out[4]",
-					"strict" : false
-				},
-				{
-					"name" : "alu_out[3]",
-					"strict" : false
-				},
-				{
-					"name" : "alu_out[2]",
-					"strict" : false
-				},
-				{
-					"name" : "alu_out[1]",
-					"strict" : false
-				},
-				{
-					"name" : "alu_out[0]",
-					"strict" : false
-				},
-				{
-					"name" : "ar_out[7]",
-					"strict" : false
-				},
-				{
-					"name" : "ar_out[6]",
-					"strict" : false
-				},
-				{
-					"name" : "ar_out[5]",
-					"strict" : false
-				},
-				{
-					"name" : "ar_out[4]",
-					"strict" : false
-				},
-				{
-					"name" : "ar_out[3]",
-					"strict" : false
-				},
-				{
-					"name" : "ar_out[2]",
-					"strict" : false
-				},
-				{
-					"name" : "ar_out[1]",
-					"strict" : false
-				},
-				{
-					"name" : "ar_out[0]",
-					"strict" : false
-				},
-				{
-					"name" : "dBus[3]",
-					"strict" : false
-				},
-				{
-					"name" : "dBus[2]",
-					"strict" : false
-				},
-				{
-					"name" : "dBus[1]",
-					"strict" : false
-				},
-				{
-					"name" : "dBus[0]",
-					"strict" : false
-				},
-				{
-					"name" : "pc_out[7]",
-					"strict" : false
-				},
-				{
-					"name" : "pc_out[6]",
-					"strict" : false
-				},
-				{
-					"name" : "pc_out[5]",
-					"strict" : false
-				},
-				{
-					"name" : "pc_out[4]",
-					"strict" : false
-				},
-				{
-					"name" : "pc_out[3]",
-					"strict" : false
-				},
-				{
-					"name" : "pc_out[2]",
-					"strict" : false
-				},
-				{
-					"name" : "pc_out[1]",
-					"strict" : false
-				},
-				{
-					"name" : "pc_out[0]",
-					"strict" : false
-				},
-				{
-					"name" : "ram0_out[7]",
-					"strict" : false
-				},
-				{
-					"name" : "ram0_out[6]",
-					"strict" : false
-				},
-				{
-					"name" : "ram0_out[5]",
-					"strict" : false
-				},
-				{
-					"name" : "ram0_out[4]",
-					"strict" : false
-				},
-				{
-					"name" : "ram0_out[3]",
-					"strict" : false
-				},
-				{
-					"name" : "ram0_out[2]",
-					"strict" : false
-				},
-				{
-					"name" : "ram0_out[1]",
-					"strict" : false
-				},
-				{
-					"name" : "ram0_out[0]",
 					"strict" : false
 				},
 				{

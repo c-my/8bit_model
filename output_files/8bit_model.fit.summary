@@ -1,16 +1,16 @@
-Fitter Status : Successful - Thu Jul 12 00:11:41 2018
+Fitter Status : Successful - Fri Jul 13 20:15:57 2018
 Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 Revision Name : 8bit_model
-Top-level Entity Name : eight_bit_model
+Top-level Entity Name : ar
 Family : Cyclone IV E
 Device : EP4CE6F17C8
 Timing Models : Final
-Total logic elements : 188 / 6,272 ( 3 % )
-    Total combinational functions : 167 / 6,272 ( 3 % )
-    Dedicated logic registers : 74 / 6,272 ( 1 % )
-Total registers : 74
-Total pins : 17 / 180 ( 9 % )
+Total logic elements : 8 / 6,272 ( < 1 % )
+    Total combinational functions : 0 / 6,272 ( 0 % )
+    Dedicated logic registers : 8 / 6,272 ( < 1 % )
+Total registers : 8
+Total pins : 18 / 180 ( 10 % )
 Total virtual pins : 0
-Total memory bits : 2,048 / 276,480 ( < 1 % )
+Total memory bits : 0 / 276,480 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 30 ( 0 % )
 Total PLLs : 0 / 2 ( 0 % )

@@ -19,7 +19,7 @@ entity controller is
 		w_RAM: out std_logic;
 		w_RAM_data: out std_logic_vector(7 downto 0);
 		w_RAM_addr: out std_logic_vector(7 downto 0);
-		test_RESULT: out std_logic;
+		NP: out std_logic;
 		clr_PC: out std_logic;
 		data_out: out std_logic_vector(7 downto 0);
 		clr_ACC:out std_logic;
@@ -178,11 +178,6 @@ begin
 				null;
 			end if;
 		
-			if i_LOAD='1' then
-				test_RESULT<='1';
-			else
-				test_RESULT<='0';
-			end if;
 		end if;
 
 	end process;

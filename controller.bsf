@@ -236,8 +236,8 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 240 176)
 		(output)
-		(text "test_RESULT" (rect 0 0 60 12)(font "Arial" ))
-		(text "test_RESULT" (rect 159 171 219 183)(font "Arial" ))
+		(text "NP" (rect 0 0 12 12)(font "Arial" ))
+		(text "NP" (rect 207 171 219 183)(font "Arial" ))
 		(line (pt 240 176)(pt 224 176)(line_width 1))
 	)
 	(port

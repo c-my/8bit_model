@@ -18,9 +18,9 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "07/11/2018 22:26:57"
+-- Generated on "07/13/2018 15:24:24"
                                                              
--- Vhdl Test Bench(with test vectors) for design  :          eight_bit_model
+-- Vhdl Test Bench(with test vectors) for design  :          pc
 -- 
 -- Simulation tool : 3rd Party
 -- 
@@ -28,49 +28,31 @@
 LIBRARY ieee;                                               
 USE ieee.std_logic_1164.all;                                
 
-ENTITY eight_bit_model_vhd_vec_tst IS
-END eight_bit_model_vhd_vec_tst;
-ARCHITECTURE eight_bit_model_arch OF eight_bit_model_vhd_vec_tst IS
+ENTITY pc_vhd_vec_tst IS
+END pc_vhd_vec_tst;
+ARCHITECTURE pc_arch OF pc_vhd_vec_tst IS
 -- constants                                                 
 -- signals                                                   
-SIGNAL acc_out : STD_LOGIC_VECTOR(7 DOWNTO 0);
 SIGNAL clk : STD_LOGIC;
-SIGNAL O_F : STD_LOGIC;
-SIGNAL OA : STD_LOGIC;
-SIGNAL OB : STD_LOGIC;
-SIGNAL OC : STD_LOGIC;
-SIGNAL OD : STD_LOGIC;
-SIGNAL OE : STD_LOGIC;
-SIGNAL OG : STD_LOGIC;
-SIGNAL test_res : STD_LOGIC;
-COMPONENT eight_bit_model
+SIGNAL clr : STD_LOGIC;
+SIGNAL en_D : STD_LOGIC;
+SIGNAL pc_out : STD_LOGIC_VECTOR(7 DOWNTO 0);
+COMPONENT pc
 	PORT (
-	acc_out : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
 	clk : IN STD_LOGIC;
-	O_F : OUT STD_LOGIC;
-	OA : OUT STD_LOGIC;
-	OB : OUT STD_LOGIC;
-	OC : OUT STD_LOGIC;
-	OD : OUT STD_LOGIC;
-	OE : OUT STD_LOGIC;
-	OG : OUT STD_LOGIC;
-	test_res : OUT STD_LOGIC
+	clr : IN STD_LOGIC;
+	en_D : IN STD_LOGIC;
+	pc_out : BUFFER STD_LOGIC_VECTOR(7 DOWNTO 0)
 	);
 END COMPONENT;
 BEGIN
-	i1 : eight_bit_model
+	i1 : pc
 	PORT MAP (
 -- list connections between master ports and signals
-	acc_out => acc_out,
 	clk => clk,
-	O_F => O_F,
-	OA => OA,
-	OB => OB,
-	OC => OC,
-	OD => OD,
-	OE => OE,
-	OG => OG,
-	test_res => test_res
+	clr => clr,
+	en_D => en_D,
+	pc_out => pc_out
 	);
 
 -- clk
@@ -81,7 +63,27 @@ LOOP
 	WAIT FOR 5000 ps;
 	clk <= '1';
 	WAIT FOR 5000 ps;
-	IF (NOW >= 100000000 ps) THEN WAIT; END IF;
+	IF (NOW >= 1000000 ps) THEN WAIT; END IF;
 END LOOP;
 END PROCESS t_prcs_clk;
-END eight_bit_model_arch;
+
+-- clr
+t_prcs_clr: PROCESS
+BEGIN
+	clr <= '0';
+	WAIT FOR 100000 ps;
+	clr <= '1';
+	WAIT FOR 70000 ps;
+	clr <= '0';
+WAIT;
+END PROCESS t_prcs_clr;
+
+-- en_D
+t_prcs_en_D: PROCESS
+BEGIN
+	en_D <= '0';
+	WAIT FOR 60000 ps;
+	en_D <= '1';
+WAIT;
+END PROCESS t_prcs_en_D;
+END pc_arch;

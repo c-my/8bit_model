@@ -4,67 +4,75 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "OA",
+					"name" : "addr_out[0]",
 					"strict" : false
 				},
 				{
-					"name" : "OB",
+					"name" : "addr_out[1]",
 					"strict" : false
 				},
 				{
-					"name" : "OC",
+					"name" : "addr_out[2]",
 					"strict" : false
 				},
 				{
-					"name" : "OD",
+					"name" : "addr_out[3]",
 					"strict" : false
 				},
 				{
-					"name" : "OE",
+					"name" : "addr_out[4]",
 					"strict" : false
 				},
 				{
-					"name" : "OG",
+					"name" : "addr_out[5]",
 					"strict" : false
 				},
 				{
-					"name" : "O_F",
+					"name" : "addr_out[6]",
 					"strict" : false
 				},
 				{
-					"name" : "acc_out[7]",
+					"name" : "addr_out[7]",
 					"strict" : false
 				},
 				{
-					"name" : "acc_out[6]",
-					"strict" : false
-				},
-				{
-					"name" : "acc_out[5]",
-					"strict" : false
-				},
-				{
-					"name" : "acc_out[4]",
-					"strict" : false
-				},
-				{
-					"name" : "acc_out[3]",
-					"strict" : false
-				},
-				{
-					"name" : "acc_out[2]",
-					"strict" : false
-				},
-				{
-					"name" : "acc_out[1]",
-					"strict" : false
-				},
-				{
-					"name" : "acc_out[0]",
+					"name" : "addr_in[0]",
 					"strict" : false
 				},
 				{
 					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "en_D",
+					"strict" : false
+				},
+				{
+					"name" : "addr_in[1]",
+					"strict" : false
+				},
+				{
+					"name" : "addr_in[2]",
+					"strict" : false
+				},
+				{
+					"name" : "addr_in[3]",
+					"strict" : false
+				},
+				{
+					"name" : "addr_in[4]",
+					"strict" : false
+				},
+				{
+					"name" : "addr_in[5]",
+					"strict" : false
+				},
+				{
+					"name" : "addr_in[6]",
+					"strict" : false
+				},
+				{
+					"name" : "addr_in[7]",
 					"strict" : false
 				}
 			]

@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone IV E"
 set_global_assignment -name DEVICE EP4CE6F17C8
-set_global_assignment -name TOP_LEVEL_ENTITY eight_bit_model
+set_global_assignment -name TOP_LEVEL_ENTITY ar
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.0.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "23:24:44  JULY 08, 2018"
 set_global_assignment -name LAST_QUARTUS_VERSION "18.0.0 Lite Edition"
@@ -58,8 +58,6 @@ set_global_assignment -name VHDL_FILE metronome.vhd
 set_global_assignment -name HEX_FILE code.hex
 set_global_assignment -name QIP_FILE ram0.qip
 set_global_assignment -name TCL_SCRIPT_FILE ax301_ax4010.tcl
-set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
-set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform1.vwf
 set_global_assignment -name QIP_FILE pll.qip
 set_global_assignment -name VHDL_FILE led.vhd
 set_location_assignment PIN_E1 -to clk
@@ -69,12 +67,21 @@ set_location_assignment PIN_P16 -to OC
 set_location_assignment PIN_T15 -to OD
 set_location_assignment PIN_P15 -to OE
 set_location_assignment PIN_N15 -to OG
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_location_assignment PIN_N12 -to O_F
 set_location_assignment PIN_P11 -to en_LED
 set_location_assignment PIN_N11 -to LED1
 set_location_assignment PIN_P11 -to LED0
 set_location_assignment PIN_P11 -to LED_0
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform1.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform2.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform3.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform4.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform5.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform6.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform7.vwf
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform8.vwf

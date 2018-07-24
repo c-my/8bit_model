@@ -18,9 +18,9 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "07/10/2018 20:08:38"
+-- Generated on "07/13/2018 20:18:56"
                                                              
--- Vhdl Test Bench(with test vectors) for design  :          eight_bit_model
+-- Vhdl Test Bench(with test vectors) for design  :          ar
 -- 
 -- Simulation tool : 3rd Party
 -- 
@@ -28,81 +28,133 @@
 LIBRARY ieee;                                               
 USE ieee.std_logic_1164.all;                                
 
-ENTITY eight_bit_model_vhd_vec_tst IS
-END eight_bit_model_vhd_vec_tst;
-ARCHITECTURE eight_bit_model_arch OF eight_bit_model_vhd_vec_tst IS
+ENTITY ar_vhd_vec_tst IS
+END ar_vhd_vec_tst;
+ARCHITECTURE ar_arch OF ar_vhd_vec_tst IS
 -- constants                                                 
 -- signals                                                   
-SIGNAL acc_out : STD_LOGIC_VECTOR(7 DOWNTO 0);
-SIGNAL accD : STD_LOGIC_VECTOR(7 DOWNTO 0);
-SIGNAL alu_out : STD_LOGIC_VECTOR(7 DOWNTO 0);
-SIGNAL ar_out : STD_LOGIC_VECTOR(7 DOWNTO 0);
+SIGNAL addr_in : STD_LOGIC_VECTOR(7 DOWNTO 0);
+SIGNAL addr_out : STD_LOGIC_VECTOR(7 DOWNTO 0);
 SIGNAL clk : STD_LOGIC;
-SIGNAL dBus : STD_LOGIC_VECTOR(7 DOWNTO 0);
-SIGNAL dr_out : STD_LOGIC_VECTOR(7 DOWNTO 0);
-SIGNAL ir_ADD : STD_LOGIC;
-SIGNAL ir_LOAD : STD_LOGIC;
-SIGNAL pc_out : STD_LOGIC_VECTOR(7 DOWNTO 0);
-SIGNAL ram0_out : STD_LOGIC_VECTOR(7 DOWNTO 0);
-SIGNAL t0 : STD_LOGIC;
-SIGNAL t1 : STD_LOGIC;
-SIGNAL t2 : STD_LOGIC;
-SIGNAL t3 : STD_LOGIC;
-SIGNAL t4 : STD_LOGIC;
-SIGNAL test_res : STD_LOGIC;
-COMPONENT eight_bit_model
+SIGNAL en_D : STD_LOGIC;
+COMPONENT ar
 	PORT (
-	acc_out : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
-	accD : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
-	alu_out : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
-	ar_out : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+	addr_in : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
+	addr_out : BUFFER STD_LOGIC_VECTOR(7 DOWNTO 0);
 	clk : IN STD_LOGIC;
-	dBus : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
-	dr_out : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
-	ir_ADD : OUT STD_LOGIC;
-	ir_LOAD : OUT STD_LOGIC;
-	pc_out : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
-	ram0_out : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
-	t0 : OUT STD_LOGIC;
-	t1 : OUT STD_LOGIC;
-	t2 : OUT STD_LOGIC;
-	t3 : OUT STD_LOGIC;
-	t4 : OUT STD_LOGIC;
-	test_res : OUT STD_LOGIC
+	en_D : IN STD_LOGIC
 	);
 END COMPONENT;
 BEGIN
-	i1 : eight_bit_model
+	i1 : ar
 	PORT MAP (
 -- list connections between master ports and signals
-	acc_out => acc_out,
-	accD => accD,
-	alu_out => alu_out,
-	ar_out => ar_out,
+	addr_in => addr_in,
+	addr_out => addr_out,
 	clk => clk,
-	dBus => dBus,
-	dr_out => dr_out,
-	ir_ADD => ir_ADD,
-	ir_LOAD => ir_LOAD,
-	pc_out => pc_out,
-	ram0_out => ram0_out,
-	t0 => t0,
-	t1 => t1,
-	t2 => t2,
-	t3 => t3,
-	t4 => t4,
-	test_res => test_res
+	en_D => en_D
 	);
+-- addr_in[7]
+t_prcs_addr_in_7: PROCESS
+BEGIN
+	addr_in(7) <= '0';
+WAIT;
+END PROCESS t_prcs_addr_in_7;
+-- addr_in[6]
+t_prcs_addr_in_6: PROCESS
+BEGIN
+	addr_in(6) <= '0';
+WAIT;
+END PROCESS t_prcs_addr_in_6;
+-- addr_in[5]
+t_prcs_addr_in_5: PROCESS
+BEGIN
+	addr_in(5) <= '0';
+	WAIT FOR 640000 ps;
+	addr_in(5) <= '1';
+WAIT;
+END PROCESS t_prcs_addr_in_5;
+-- addr_in[4]
+t_prcs_addr_in_4: PROCESS
+BEGIN
+	addr_in(4) <= '0';
+	WAIT FOR 320000 ps;
+	addr_in(4) <= '1';
+	WAIT FOR 320000 ps;
+	addr_in(4) <= '0';
+	WAIT FOR 320000 ps;
+	addr_in(4) <= '1';
+WAIT;
+END PROCESS t_prcs_addr_in_4;
+-- addr_in[3]
+t_prcs_addr_in_3: PROCESS
+BEGIN
+	FOR i IN 1 TO 3
+	LOOP
+		addr_in(3) <= '0';
+		WAIT FOR 160000 ps;
+		addr_in(3) <= '1';
+		WAIT FOR 160000 ps;
+	END LOOP;
+	addr_in(3) <= '0';
+WAIT;
+END PROCESS t_prcs_addr_in_3;
+-- addr_in[2]
+t_prcs_addr_in_2: PROCESS
+BEGIN
+	FOR i IN 1 TO 6
+	LOOP
+		addr_in(2) <= '0';
+		WAIT FOR 80000 ps;
+		addr_in(2) <= '1';
+		WAIT FOR 80000 ps;
+	END LOOP;
+	addr_in(2) <= '0';
+WAIT;
+END PROCESS t_prcs_addr_in_2;
+-- addr_in[1]
+t_prcs_addr_in_1: PROCESS
+BEGIN
+	FOR i IN 1 TO 12
+	LOOP
+		addr_in(1) <= '0';
+		WAIT FOR 40000 ps;
+		addr_in(1) <= '1';
+		WAIT FOR 40000 ps;
+	END LOOP;
+	addr_in(1) <= '0';
+WAIT;
+END PROCESS t_prcs_addr_in_1;
+-- addr_in[0]
+t_prcs_addr_in_0: PROCESS
+BEGIN
+LOOP
+	addr_in(0) <= '0';
+	WAIT FOR 20000 ps;
+	addr_in(0) <= '1';
+	WAIT FOR 20000 ps;
+	IF (NOW >= 1000000 ps) THEN WAIT; END IF;
+END LOOP;
+END PROCESS t_prcs_addr_in_0;
 
 -- clk
 t_prcs_clk: PROCESS
 BEGIN
 LOOP
 	clk <= '0';
-	WAIT FOR 5000 ps;
+	WAIT FOR 10000 ps;
 	clk <= '1';
-	WAIT FOR 5000 ps;
+	WAIT FOR 10000 ps;
 	IF (NOW >= 1000000 ps) THEN WAIT; END IF;
 END LOOP;
 END PROCESS t_prcs_clk;
-END eight_bit_model_arch;
+
+-- en_D
+t_prcs_en_D: PROCESS
+BEGIN
+	en_D <= '0';
+	WAIT FOR 30000 ps;
+	en_D <= '1';
+WAIT;
+END PROCESS t_prcs_en_D;
+END ar_arch;
